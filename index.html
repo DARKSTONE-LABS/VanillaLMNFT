@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag Key</title>
+    <script>window.ownerId = "sLeEPWPLjrpxMASd6fj6zrVPiXoFNRPmjuCrsC66LiF"; window.collectionId = "YTVS1UTzE9nuKSH8DMcb";</script>
+    <script type="module" src="https://storage.googleapis.com/scriptslmt/0.1.4/solana.js" defer></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/scriptslmt/0.1.4/solana.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Audiowide&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #000; /* Dark background */
+            color: #0f0; /* Neon green text */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #main-container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            background-color: #121212; /* Deep grey for contrast */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5); /* Neon green glow */
+            margin-top: 20px;
+        }
+        h1 {
+            color: #ff00ff; /* Neon pink color */
+            text-align: center;
+            text-shadow: 0 0 5px #0ff; /* Cyan glow for contrast */
+        }
+        #mint-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #mint-counter {
+            text-align: center;
+            margin-top: 10px;
+            color: #ff00ff; /* Neon pink for consistency */
+        }
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        img.nft-image {
+            max-width: 300px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 0 8px #0ff; /* Cyan glow */
+        }
+        .info {
+            padding: 10px;
+            background-color: #333; /* Dark grey */
+            color: #0f0; /* Neon green text for info */
+            border-radius: 4px;
+            margin-top: 15px;
+            text-shadow: 0 0 3px #ff00ff; /* Neon pink glow for text */
+        }
+        button {
+            background-color: #222; /* Dark background for button */
+            color: #0ff; /* Cyan text */
+            border: 1px solid #0ff; /* Cyan border */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            outline: none;
+            box-shadow: 0 0 5px #0ff; /* Cyan glow */
+        }
+        button:hover {
+            background-color: #0ff; /* Cyan background on hover */
+            color: #000; /* Dark text on hover */
+            box-shadow: 0 0 10px #0ff; /* Increased cyan glow */
+        }
+    </style>
+</head>
+<body>
+<div id="main-container">
+    <h1>Swag Key</h1>
+    <div class="image-container">
+        <img src="swag.png" alt="NFT Image" class="nft-image">
+    </div>
+    <div class="info">Swag Key <span id="nft-name"></span></div>
+    <div class="info"> <span id="nft-description">Open the door</span></div>
+    <!-- Mint button gets injected here -->
+    <div id="mint-button-container"></div>
+    <div id="mint-counter"></div>
+</div>
+</body>
+</html>
