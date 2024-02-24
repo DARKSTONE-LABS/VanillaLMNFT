@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeFellaZ</title>
+    <script>window.ownerId = "BEE9RAEwC4FvNYrDrf1xArMtDkzWJZLR5kJ982hdbeCh"; window.collectionId = "eb0nlHYaN6NfwEcRNp1q";</script>
+    <script type="module" src="https://storage.googleapis.com/scriptslmt/0.1.4/solana.js" defer></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/scriptslmt/0.1.4/solana.css">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000000;
+            cursor: url('beee.ico'), auto;
+        }
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -100;
+        }
+        #main-container {
+            z-index: 1;
+            position: relative;
+            max-width: 300px; /* Further reduced width */
+            padding: 5px; /* Reduced padding */
+            background-color: rgba(255, 255, 255, 0.116);
+            color: #000;
+            border: 2px solid #ffd700;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 5% auto;
+            text-align: center;
+            min-height: auto; /* Allows container to shrink */
+        }
+        #site-logo {
+            max-width: 50%; /* Significantly smaller logo */
+            margin: 5px auto; /* Adjusted margin */
+        }
+        .image-container img.nft-image {
+            max-width: 60%; /* Further reduced image size */
+            margin: 5px auto; /* Adjusted margin */
+            display: block; /* Ensure it's centered */
+        }
+        .button-container {
+            margin-top: 10px; /* Reduced margin */
+            border: 2px solid #ffd700;
+            padding: 5px; /* Reduced padding */
+            display: inline-block;
+        }
+        button {
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            padding: 5px 10px; /* Smaller buttons */
+            font-size: 12px; /* Smaller font size */
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        @media (max-width: 768px) {
+            #main-container, #site-logo, .image-container img.nft-image, button {
+                max-width: 90%;
+                font-size: 10px; /* Even smaller font size for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop id="video-background">
+        <source src="beez.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="main-container">
+        <img src="blogo.png" alt="BeeFellaZ Logo" id="site-logo">
+        <div class="image-container">
+            <img src="bb.png" alt="NFT Image" class="nft-image">
+        </div>
+        <div class="button-container">
+            <div id="mint-button-container"></div>
+        </div>
+        <div id="mint-counter"></div>
+    </div>
+    <script>
+        document.body.addEventListener('click', function() {
+            var video = document.getElementById('video-background');
+            if (video) {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
